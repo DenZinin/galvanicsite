@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пользовательское соглашение | Российские Гальванические Технологии</title>
+    
+    <!-- SEO мета-теги -->
+    <meta name="description" content="Пользовательское соглашение сайта Российские Гальванические Технологии. Условия использования сайта galvanictech.ru">
+    <meta name="keywords" content="пользовательское соглашение, условия использования, гальваническое оборудование, РГТ">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Пользовательское соглашение | Российские Гальванические Технологии">
+    <meta property="og:description" content="Условия использования сайта galvanictech.ru">
+    <meta property="og:type" content="website">
+    
+    <link rel="canonical" href="https://galvanictech.ru/terms" />
+    
+    <!-- Фавиконы для всех устройств и браузеров -->
+    <link rel="icon" href="https://galvanictech.ru/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="https://galvanictech.ru/favicon-32x32.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon-32x32.ico" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="https://galvanictech.ru/images/logo_favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://galvanictech.ru/images/logo_favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://galvanictech.ru/images/logo_favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://galvanictech.ru/images/logo_favicon/apple-touch-icon180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://galvanictech.ru/images/logo_favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="https://galvanictech.ru/images/logo_favicon/android-chrome-512x512.png">
+    
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="https://galvanictech.ru/images/logo_favicon/site.webmanifest">
+    
+    <!-- Цвет темы для браузеров -->
+    <meta name="theme-color" content="#f59e0b">
+    <meta name="msapplication-TileColor" content="#f59e0b">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VEJL3JX4B1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-VEJL3JX4B1');
+    </script>
+    
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="./output.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+</head>
+<body class="bg-gray-100">
+    <!-- Индикатор загрузки -->
+    <div id="loading" class="fixed inset-0 bg-white z-50 flex items-center justify-center transition-opacity duration-300">
+        <div class="text-center">
+            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-yellow-500 mx-auto"></div>
+            <p class="mt-4 text-gray-600">Загрузка...</p>
+        </div>
+    </div>
+
+    <!-- Навигационная панель -->
+    <nav class="bg-gray-900 text-white shadow-lg">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <!-- Логотип и название компании -->
+                <div class="flex items-center space-x-4">
+                    <i data-feather="zap" class="text-yellow-400"></i>
+                    <span class="text-xl font-bold">РГТ</span>
+                </div>
+                
+                <!-- Кнопка меню для мобильных устройств -->
+                <div class="md:hidden">
+                    <button class="outline-none mobile-menu-button">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+                
+                <!-- Навигационные ссылки для десктопных устройств -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="/" class="hover:text-yellow-400 transition">Главная</a>
+                    <a href="/products" class="hover:text-yellow-400 transition">Продукция</a>
+                    <a href="/about" class="hover:text-yellow-400 transition">О компании</a>
+                    <a href="/contacts" class="hover:text-yellow-400 transition">Контакты</a>
+                    <!-- Кнопка "Оставить заявку" для десктопной версии -->
+                    <button id="openApplicationModal" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-medium py-2 px-4 rounded-lg transition duration-300">
+                        Оставить заявку
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Мобильное меню (скрыто по умолчанию) -->
+            <div class="mobile-menu hidden md:hidden">
+                <a href="/" class="block py-2 px-4 text-sm hover:bg-gray-800">Главная</a>
+                <a href="/products" class="block py-2 px-4 text-sm hover:bg-gray-800">Продукция</a>
+                <a href="/about" class="block py-2 px-4 text-sm hover:bg-gray-800">О компании</a>
+                <a href="/contacts" class="block py-2 px-4 text-sm hover:bg-gray-800">Контакты</a>
+                <!-- Кнопка "Оставить заявку" для мобильной версии -->
+                <button id="openApplicationModalMobile" class="block w-full text-left py-2 px-4 text-sm bg-yellow-500 text-gray-900 font-medium hover:bg-yellow-600 transition duration-300">
+                    Оставить заявку
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Модальное окно для заявки -->
+    <div id="applicationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">Оставить заявку</h2>
+            
+            <form id="applicationForm">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="applicationName" class="block mb-2">Ваше имя *</label>
+                        <input type="text" id="applicationName" name="name" required class="w-full px-4 py-2 rounded border border-gray-300 focus:border-yellow-500 focus:outline-none">
+                    </div>
+                
+                    <div>
+                        <label for="applicationCompany" class="block mb-2">Компания</label>
+                        <input type="text" id="applicationCompany" name="company" class="w-full px-4 py-2 rounded border border-gray-300 focus:border-yellow-500 focus:outline-none">
+                    </div>
+                
+                    <div>
+                        <label for="applicationPhone" class="block mb-2">Телефон *</label>
+                        <input type="tel" id="applicationPhone" name="phone" required class="w-full px-4 py-2 rounded border border-gray-300 focus:border-yellow-500 focus:outline-none">
+                    </div>
+                
+                    <div>
+                        <label for="applicationEmail" class="block mb-2">Email</label>
+                        <input type="email" id="applicationEmail" name="email" class="w-full px-4 py-2 rounded border border-gray-300 focus:border-yellow-500 focus:outline-none">
+                    </div>
+                </div>
+            
+                <div class="mt-6">
+                    <label for="applicationInterest" class="block mb-2">Интересующая продукция *</label>
+                    <select id="applicationInterest" name="interest" required class="w-full px-4 py-2 rounded border border-gray-300 focus:border-yellow-500 focus:outline-none">
+                        <option value="">Выберите продукт</option>
+                        <option value="Механизированные линии">Механизированные линии</option>
+                        <option value="Линии с ручным управлением">Линии с ручным управлением</option>
+                        <option value="Гальванические барабаны">Гальванические барабаны</option>
+                        <option value="Консультация">Консультация</option>
+                    </select>
+                </div>
+            
+                <div class="mt-6">
+                    <label for="applicationMessage" class="block mb-2">Ваше сообщение</label>
+                    <textarea id="applicationMessage" name="message" rows="4" class="w-full px-4 py-2 rounded border border-gray-300 focus:border-yellow-500 focus:outline-none" placeholder="Опишите ваши задачи или вопросы..."></textarea>
+                </div>
+            
+                <div class="mt-8 text-center">
+                    <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-8 rounded-lg transition duration-300">
+                        Отправить заявку
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Герой-секция -->
+    <section class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 chrome-text" data-aos="fade-down">
+                Пользовательское соглашение
+            </h1>
+            
+            <p class="text-xl mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                Условия использования сайта Российские Гальванические Технологии
+            </p>
+            
+            <div class="flex justify-center space-x-4" data-aos="zoom-in" data-aos-delay="400">
+                <a href="/" class="metal-btn inline-block px-6 py-3 rounded-lg font-bold text-gray-800 transition duration-300">
+                    На главную
+                </a>
+                <a href="/privacy" class="bg-gray-700 hover:bg-gray-600 inline-block px-6 py-3 rounded-lg font-bold text-white transition duration-300">
+                    Политика конфиденциальности
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Основной контент соглашения -->
+    <section class="py-12">
+        <div class="container mx-auto px-6">
+            <div class="agreement-content">
+                <div class="agreement-section" data-aos="fade-up">
+                    <div class="agreement-header">
+                        <h2 class="text-2xl font-bold">ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ (ПУБЛИЧНАЯ ОФЕРТА)</h2>
+                    </div>
+                    
+                    <div class="agreement-body">
+                        <div class="agreement-text">
+                            <h2>1. ОБЩИЕ ПОЛОЖЕНИЯ</h2>
+                            <p>1.1. Настоящее Пользовательское соглашение (далее – «Соглашение») регулирует отношения между Администрацией сайта <a href="https://galvanictech.ru" class="text-blue-600 hover:underline">https://galvanictech.ru</a> (далее – «Администрация» или «Мы») и любым лицом (далее – «Пользователь» или «Вы»), использующим сайт <a href="https://galvanictech.ru" class="text-blue-600 hover:underline">https://galvanictech.ru</a> (далее – «Сайт»).</p>
+                            <p>1.2. Соглашение в соответствии со ст. 435 и ст. 437 Гражданского кодекса Российской Федерации является публичной офертой. Полным и безоговорочным акцептом (принятием) условий данной оферты в соответствии со ст. 438 ГК РФ считается факт любого использования Сайта Пользователем.</p>
+                            <p>1.3. Используя Сайт, Вы подтверждаете, что ознакомились с условиями настоящего Соглашения, Политикой конфиденциальности и соглашаетесь с ними. Если Вы не согласны с условиями Соглашения, Вы не вправе использовать Сайт.</p>
+                            <p>1.4. Администрация вправе в одностороннем порядке изменять условия Соглашения в любое время. Изменения вступают в силу с момента их размещения на Сайте, если иной срок не указан в соответствующем уведомлении. Продолжение использования Сайта после внесения изменений означает ваше согласие с этими изменениями.</p>
+
+                            <h2>2. ТЕРМИНЫ И ОПРЕДЕЛЕНИЯ</h2>
+                            <p><strong>2.1. Сайт</strong> – совокупность информации, текстов, графических элементов, дизайна, изображений, фото- и видеоматериалов, и иных результатов интеллектуальной деятельности, а также программ для ЭВМ, содержащихся в информационной системе, доступ к которой обеспечивается через доменное имя galvanictech.ru и его поддомены.</p>
+                            <p><strong>2.2. Контент</strong> – любая информация, размещенная на Сайте, включая, но не ограничиваясь: тексты, статьи, изображения, графику, видео, аудио, товарные знаки, логотипы, программы для ЭВМ, базы данных.</p>
+                            <p><strong>2.3. Пользователь</strong> – любое физическое или юридическое лицо, осуществляющее доступ к Сайту.</p>
+                            <p><strong>2.4. Администрация (Владелец Сайта)</strong> – 
+                                являющееся правообладателем Сайта.
+                            </p>
+                            <p><strong>2.5. Услуги Сайта</strong> – функциональные возможности, предоставляемые Пользователю через Сайт, включая доступ к информации, контактам, формам обратной связи и иным сервисам.</p>
+
+                            <h2>3. ПРЕДМЕТ СОГЛАШЕНИЯ. УСЛОВИЯ ИСПОЛЬЗОВАНИЯ</h2>
+                            <p>3.1. Администрация предоставляет Пользователю право на использование Сайта на условиях простой (неисключительной) лицензии в некоммерческих целях, исключительно в том виде, в каком он представлен.</p>
+                            
+                            <h3>3.2. Пользователь вправе:</h3>
+                            <ul class="list-disc pl-6">
+                                <li>Осуществлять просмотр Контента на Сайте.</li>
+                                <li>Использовать функциональные возможности Сайта, предназначенные для Пользователей (например, форма обратной связи).</li>
+                                <li>Цитировать элементы Контента с обязательным указанием активной индексируемой гиперссылки на источник (Сайт).</li>
+                            </ul>
+
+                            <h3>3.3. Пользователю запрещается:</h3>
+                            <ul class="list-disc pl-6">
+                                <li>Копировать, воспроизводить, распространять, перерабатывать иначе как с предварительного письменного согласия Администрации любые элементы Контента, кроме случаев, прямо предусмотренных Соглашением или законодательством РФ.</li>
+                                <li>Использовать Сайт для распространения информации, содержащей угрозы, клевету, оскорбления, порнографию, пропаганду ненависти или расовой дискриминации, а также иной информации, распространение которой запрещено законодательством РФ.</li>
+                                <li>Осуществлять действия, направленные на нарушение нормального функционирования Сайта (DDoS-атаки, взлом и т.п.).</li>
+                                <li>Использовать автоматизированные скрипты (программы) для сбора информации или взаимодействия с Сайтом.</li>
+                                <li>Размещать коммерческую рекламу, спам, вредоносное программное обеспечение.</li>
+                                <li>Регистрироваться в качестве Пользователя от имени другого лица.</li>
+                            </ul>
+
+                            <h2>4. ИНТЕЛЛЕКТУАЛЬНАЯ СОБСТВЕННОСТЬ</h2>
+                            <p>4.1. Все объекты интеллектуальной собственности, размещенные на Сайте, являются исключительной собственностью Администрации или правообладателей, с которыми у Администрации заключены соответствующие лицензионные договоры.</p>
+                            <p>4.2. Никакие положения Соглашения не могут быть расценены как передача исключительных прав на объекты интеллектуальной собственности Пользователю.</p>
+
+                            <h2>5. ОБРАБОТКА ПЕРСОНАЛЬНЫХ ДАННЫХ</h2>
+                            <p>5.1. Администрация обязуется обеспечивать конфиденциальность и защиту персональных данных Пользователей в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных» и Политикой конфиденциальности Сайта.</p>
+                            <p>5.2. Факт использования Сайта означает согласие Пользователя на обработку его персональных данных, предоставляемых через формы на Сайте (например, форма обратной связи), в целях оказания Услуг, связи с Пользователем и выполнения требований законодательства.</p>
+                            <p>5.3. Политика конфиденциальности размещена по адресу: <a href="https://galvanictech.ru/privacy" class="text-blue-600 hover:underline">https://galvanictech.ru/privacy</a>.</p>
+
+                            <h2>6. ИСПОЛЬЗОВАНИЕ COOKIES</h2>
+                            <p>6.1. Сайт использует файлы cookie для улучшения работы сервисов, анализа трафика и персонализации контента. Продолжая использовать Сайт, Вы соглашаетесь на использование файлов cookie.</p>
+
+                            <h2>7. ОГРАНИЧЕНИЕ ОТВЕТСТВЕННОСТИ</h2>
+                            <p>7.1. Сайт и все его Услуги предоставляются по принципу «как есть» (AS IS). Администрация не гарантирует бесперебойную и безошибочную работу Сайта, а также соответствие Услуг ожиданиям Пользователя.</p>
+                            <p>7.2. Администрация не несет ответственности за любые прямые или косвенные убытки, возникшие у Пользователя в результате использования или невозможности использования Сайта.</p>
+                            <p>7.3. Администрация не несет ответственности за содержание и достоверность информации, размещенной на сторонних сайтах, ссылки на которые могут присутствовать на Сайте.</p>
+                            <p>7.4. Пользователь самостоятельно несет ответственность за соблюдение законодательства РФ при использовании Сайта.</p>
+
+                            <h2>8. ЗАКЛЮЧИТЕЛЬНЫЕ ПОЛОЖЕНИЯ</h2>
+                            <p>8.1. Настоящее Соглашение регулируется и толкуется в соответствии с законодательством Российской Федерации.</p>
+                            <p>8.2. Все споры, возникающие из настоящего Соглашения, подлежат разрешению в судебном порядке по месту нахождения Администрации в соответствии с нормами процессуального законодательства РФ.</p>
+                            <p>8.3. Если какое-либо положение Соглашения будет признано недействительным, это не повлияет на действительность остальных положений.</p>
+                            <p>8.4. Администрация вправе осуществлять рассылку информационных и рекламных сообщений Пользователям, указавшим свои контактные данные. Пользователь вправе отказаться от получения таких сообщений.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер сайта -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Блок с информацией о компании -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-yellow-400">РГТ</h3>
+                    <p class="mb-4">
+                        Российские Гальванические Технологии - производитель гальванического оборудования и автоматических линий с большим опытом в разработке и производстве.
+                    </p>
+                </div>
+                
+                <!-- Блок навигации по сайту -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Навигация</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="hover:text-yellow-400">Главная</a></li>
+                        <li><a href="/products" class="hover:text-yellow-400">Гальваническое оборудование</a></li>
+                        <li><a href="/about" class="hover:text-yellow-400">О компании</a></li>
+                        <li><a href="/contacts" class="hover:text-yellow-400">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Блок с категориями продукции -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Гальванические линии</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-yellow-400">Линии цинкования</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Линии никелирования</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Линии хромирования</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Автоматические линии</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Блок с контактной информацией -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Контакты</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i data-feather="map-pin" class="mr-2"></i>
+                            <span>МО, г. Ивантеевка, ул. Дзержинского 1</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="phone" class="mr-2"></i>
+                            <span>+7 (993) 619-90-18</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="mail" class="mr-2"></i>
+                            <span>proplastic30@yandex.ru</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Копирайт -->
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2025 Российские Гальванические Технологии. Производство гальванического оборудования.</p>
+                <ul class="flex justify-center space-x-6 mt-4">
+                    <li><a href="/privacy" class="hover:text-yellow-400">Политика конфиденциальности</a></li>
+                    <li><a href="/terms" class="text-yellow-400">Пользовательское соглашение</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <button id="scrollToTop" class="fixed bottom-8 right-8 bg-yellow-500 text-white p-3 rounded-full shadow-lg hidden transition-opacity duration-300 opacity-0 z-40">
+        <i data-feather="arrow-up"></i>
+    </button>
+
+    <!-- Скрипты для инициализации библиотек -->
+    <script>
+        // Инициализация библиотеки анимаций AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Обработчик для мобильного меню
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            // Меняем иконку
+            const icon = mobileMenuButton.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                feather.icons.menu.replace();
+            } else {
+                feather.icons.x.replace();
+            }
+        });
+
+        // Закрытие меню при клике на ссылку
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                feather.icons.menu.replace();
+            });
+        });
+
+        // Скрипт для кнопки "Наверх"
+        const scrollBtn = document.getElementById('scrollToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollBtn.classList.remove('hidden', 'opacity-0');
+                scrollBtn.classList.add('opacity-100');
+            } else {
+                scrollBtn.classList.remove('opacity-100');
+                scrollBtn.classList.add('opacity-0');
+                setTimeout(() => {
+                    if (window.scrollY <= 300) {
+                        scrollBtn.classList.add('hidden');
+                    }
+                }, 300);
+            }
+        });
+        
+        scrollBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Скрипт для индикатора загрузки
+        window.addEventListener('load', () => {
+            const loading = document.getElementById('loading');
+            loading.style.opacity = '0';
+            setTimeout(() => {
+                loading.style.display = 'none';
+            }, 300);
+        });
+
+        // Замена иконок Feather Icons
+        feather.replace();
+
+        // Модальное окно для заявки
+        const applicationModal = document.getElementById('applicationModal');
+        const openApplicationModalBtn = document.getElementById('openApplicationModal');
+        const openApplicationModalMobileBtn = document.getElementById('openApplicationModalMobile');
+        const closeApplicationModalBtn = document.querySelector('.close-modal');
+
+        // Открытие модального окна
+        function openApplicationModal() {
+            applicationModal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Закрытие модального окна
+        function closeApplicationModal() {
+            applicationModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Обработчики событий для открытия модального окна
+        openApplicationModalBtn.addEventListener('click', openApplicationModal);
+        openApplicationModalMobileBtn.addEventListener('click', openApplicationModal);
+
+        // Обработчик для закрытия модального окна
+        closeApplicationModalBtn.addEventListener('click', closeApplicationModal);
+
+        // Закрытие модального окна при клике вне его
+        window.addEventListener('click', (event) => {
+            if (event.target === applicationModal) {
+                closeApplicationModal();
+            }
+        });
+
+        // Закрытие модального окна при нажатии клавиши Escape
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && applicationModal.style.display === 'block') {
+                closeApplicationModal();
+            }
+        });
+
+        // Обработчик формы заявки (упрощенный)
+        document.getElementById('applicationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Форма отправлена! В реальной реализации здесь будет код для отправки данных на сервер.');
+            closeApplicationModal();
+        });
+    </script>
+</body>
+</html>

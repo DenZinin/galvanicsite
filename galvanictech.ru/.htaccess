@@ -1,0 +1,37 @@
+# Block direct access to env and config files
+<FilesMatch "^(\.env|load_env\.php)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+RewriteEngine On
+
+# Перенаправление с www на без www
+RewriteCond %{HTTP_HOST} ^www\.galvanictech\.ru$ [NC]
+RewriteRule ^(.*)$ https://galvanictech.ru/$1 [R=301,L]
+
+# Перенаправление index.html в корне на главную страницу
+RewriteCond %{THE_REQUEST} /index\.html [NC]
+RewriteRule ^(.*)index\.html$ /$1 [R=301,L,NC]
+
+# Правило 1: Внешний редирект - перенаправление URL с .html на "чистый" URL
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R=301]
+
+# Правило 2: Внутренняя подмена - чтобы "чистый" URL открывал .html-файл
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ /$1.html [L]
+
+# Кеширование статических файлов
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/html "access plus 1 week"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+</IfModule>

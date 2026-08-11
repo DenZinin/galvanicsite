@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Запрещаем служебные директории
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /includes/
+Disallow: /tmp/
+Disallow: /private/
+
+# Запрещаем параметры URL, которые могут создавать дубли
+Disallow: /*?*
+Disallow: /*&*
+Disallow: /*?utm_
+Disallow: /*?gclid=
+
+# Разрешаем основные страницы (обновленные URL без .html)
+Allow: /
+Allow: /products
+Allow: /about
+Allow: /contacts
+Allow: /terms
+Allow: /privacy
+
+# Указываем расположение sitemap
+Sitemap: https://galvanictech.ru/sitemap.xml
