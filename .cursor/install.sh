@@ -60,8 +60,9 @@ ENVEOF
 fi
 
 # Ensure the tmpfs-backed runtime dirs exist (empty on fresh boots) so
-# apache2ctl can run here and on every start.
-sudo mkdir -p /var/run/apache2 /var/lock /run/lock
+# apache2ctl can run here and on every start. /var/run and /var/lock are
+# symlinks into /run, so create the real targets there.
+sudo mkdir -p /run/apache2 /run/lock
 
 # Validate config without needing a running server.
 sudo apache2ctl configtest
