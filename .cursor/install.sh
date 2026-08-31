@@ -59,7 +59,11 @@ TELEGRAM_CHAT_ID=dev-placeholder-chat-id
 ENVEOF
 fi
 
+# Ensure the tmpfs-backed runtime dirs exist (empty on fresh boots) so
+# apache2ctl can run here and on every start.
+sudo mkdir -p /var/run/apache2 /var/lock /run/lock
+
 # Validate config without needing a running server.
 sudo apache2ctl configtest
 
-echo "==> Install complete. Start with: sudo -E apache2ctl -D FOREGROUND (served on :$PORT)"
+echo "==> Install complete. Start with: .cursor/start.sh (served on :$PORT)"
