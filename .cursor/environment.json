@@ -1,0 +1,16 @@
+{
+  "name": "galvanictech.ru static site",
+  "install": ".cursor/install.sh",
+  "terminals": [
+    {
+      "name": "apache",
+      "command": "sudo -E apache2ctl -D FOREGROUND"
+    }
+  ],
+  "ports": [
+    {
+      "name": "web",
+      "port": 8080
+    }
+  ]
+}
